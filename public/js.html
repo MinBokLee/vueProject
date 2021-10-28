@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jquery Event</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                alert('클릭하지맛!!');
+            })
+        });
+    </script>
+    <style>
+        .btn{
+
+            width:100px;
+            height:40px;
+            line-height:40px;
+            background:deeppink;
+            color :#fff;
+            text-align:center;
+            cursor:pointer;
+        }
+        .popup_bg{
+            display: none;
+            position: absolute;
+            top:0;
+            left:0;
+            width:100px;
+            height:40px;
+            background: rgba(0,0,0,0,7);
+        }
+        .popup{
+            position: absolute;
+            left:calc(50% - 150px);
+            top:calc(50% -  250px);
+            width:300%;
+            height:500%;
+            background: rgba(0,0,0,0,7);
+        }
+    </style>
+  <body>
+    <div class="btn">타모</div>
+    <div class="popup-bg">
+    <div class="popup"></div>
+  </body>
+</html>
